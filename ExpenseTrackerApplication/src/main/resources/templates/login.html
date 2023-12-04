@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        
+        #logincontainer{
+            height: 35rem;
+            width: 50%rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        #form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 30rem;
+            width: 25rem;
+            border-radius: .8rem;
+            box-shadow: 5px 5px 8px gray;
+            background-color: rgba(175, 218, 253, 0.932);
+            opacity: .8;
+            backdrop-filter: blur(2px);
+            position: absolute;
+        }
+        
+        form{
+        	display: flex;
+            align-items: center;
+            justify-content: center;
+             flex-direction: column;
+        }
+
+        #loginimage{
+            position: absolute;
+            top: 4rem;
+
+            z-index: 1;
+        }
+
+        #loginimage img{
+            height: 6rem;
+        }
+
+        
+
+        #bgvideo{
+            position: absolute;
+            height: 100%;
+            z-index: -10;
+            margin-left: -23rem;
+            filter: blur(6px);
+        }
+
+.inputs{
+    width: 250px;
+}
+#signup{
+    border: none;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    color: rgb(1, 1, 37);
+    font-weight: 700;
+    position: relative;
+    top: 3rem;
+}
+    
+#forgot-password{
+    position: relative;
+    top: 2rem;
+    }
+    </style>
+    
+</head>
+<body>
+    <nav id="navigation">
+        <div id="logo"> <video src="./media/dollar-search.mp4" autoplay loop muted></video></div>
+        <span id="name" class="text"> <h2>Expen<span class="dollar">&dollar;</span>e<span class="dollar">&dollar;</span> Tracker</h2></span>
+    </nav>
+    <div id="logincontainer">
+        <!-- <video src="./media/PieChartGrowing.mp4" autoplay muted loop id="bgvideo"></video> -->
+        <div id="loginimage"><img src="./media/userIcon.gif" alt=""></div>
+        <div id="form">
+        
+        <form action="loginOperation" method="post">
+            <input  class="inset inputs" type="text" placeholder="Username" name="username"> <br> <br>
+            <input  class="inset inputs" type="password" placeholder="Password" name="password"> <br> <br>
+            <button class="btn-donate" type="submit" >Log In</button> 
+
+            <a href="#" id="forgot-password">Forgot Password?</a> <br> <br>  &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  <a href="registeration">Sign Up</a>
+
+        </form>
+    </div>
+    </div>
+
+    <footer>
+        Copyright &copy; 2023 by Irshad Ahemad | All Rights Reserved
+    </footer>
+</body>
+</html>
